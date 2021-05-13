@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link href="../css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a class="top-nav" href="../HTML/index.html"> Home </a>
+      <a class="top-nav" href="../HTML/about.html" target="_blank">About</a>
+      <a class="top-nav" href="../HTML/contact.html" target="_blank">Contact</a>
+    </header>
+    <h1>Contact Me!</h1>
+    <div class="content-wrapper">
+      <div class="form-wrapper">
+        <div class="row-field">
+          <label for="firstname" class="required label-style"
+            >First name:</label
+          >
+          <input id="firstName" type="text" class="form-input" required />
+        </div>
+        <div class="row-field">
+          <label for="lasttname " class="label-style">Last name:</label>
+          <input id="lastName" type="text" class="form-input" />
+        </div>
+        <div class="row-field">
+          <label for="email" class="required label-style">Email:</label>
+          <input id="email" type="email" class="form-input" required />
+        </div>
+        <div class="row-field">
+          <label for="tel" class="label-style">Number phone:</label>
+          <input id="numTel" type="tel" class="form-input" required />
+        </div>
+        <div class="row-field">
+          <label for="comment" class="required label-style">Comment:</label>
+          <input id="comment" type="text" class="form-input" required />
+        </div>
+        <div class="row-button">
+          <button id="submitButton" class="button-style" disabled>
+            Submit
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="../js/portfolio.js"></script>
+  </body>
+</html>

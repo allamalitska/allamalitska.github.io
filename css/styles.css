@@ -1,0 +1,256 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-color: #e5e5e5;
+  display: flex;
+  flex-direction: row;
+  height: 850px;
+  margin: 0;
+}
+
+.main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Search bar */
+.search-bar {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 1184px;
+  height: 60px;
+  margin-left: 3px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.global-search {
+  text-decoration: none;
+  color: #90a0b7;
+  flex-grow: 1;
+}
+
+/* Side bar */
+.side-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #ffffff;
+  min-width: 256px;
+  height: 100%;
+}
+
+.top-nav-bar {
+  flex-basis: 50%;
+}
+.top {
+  display: flex;
+  align-items: center;
+  color: #109cf1;
+  border-bottom: 1px solid #e5e5e5;
+  padding-left: 24px;
+  height: 60px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: larger;
+}
+.profile {
+  display: flex;
+  flex-direction: row;
+  padding: 24px;
+}
+.image {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.primary-info,
+p {
+  display: flex;
+  flex-direction: column;
+  margin: 0px;
+}
+.gmail {
+  color: #90a0b7;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.menu {
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 24px;
+  border-bottom: 1px solid #e5e5e5;
+}
+.dashboard,
+.tasks,
+.email,
+.contacts,
+.chat,
+.deals {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+.text {
+  color: #334d6e;
+  text-decoration: none;
+  padding: 10px 15px;
+}
+.text-dashboard {
+  color: #109cf1;
+  text-decoration: none;
+  padding: 5px 10px;
+}
+
+.bottom-nav-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+.settings {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-left: 24px;
+}
+.toggle-sidebar {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  margin-left: 24px;
+}
+.text-toggle-sidebar {
+  color: #90a0b7;
+  padding: 5px 10px;
+  font-size: smaller;
+}
+
+/* Content */
+.content {
+  display: flex;
+  flex-direction: row;
+  padding: 36px;
+  height: calc(100% - 72px);
+  width: 100%;
+}
+
+.charts {
+  display: flex;
+  flex-direction: column;
+}
+.chart-panel {
+  width: 445px;
+  height: 344px;
+  background-color: white;
+}
+.chart-panel:last-child {
+  margin-top: 36px;
+}
+.chart-panel-img {
+  width: 445px;
+  height: 344px;
+  left: 0px;
+  top: 0px;
+  background: #ffffff;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.06);
+  border-radius: 4px;
+}
+
+/* Main penal */
+.main-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 655px;
+  margin-right: 36px;
+  background-color: white;
+}
+
+.top-main-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 33%;
+  border-bottom: 1px solid #e5e5e5;
+  min-width: 655px;
+}
+.box1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  margin: 15px;
+}
+.text-styling {
+  color: #109cf1;
+  border: none;
+}
+.box2 {
+  background: #ebeff2;
+  border-radius: 3px;
+  height: 4px;
+  margin: 10px 15px;
+}
+.line {
+  background-color: #2ed47a;
+  border-radius: 3px;
+  height: 4px;
+  width: 75%;
+}
+.box3 {
+  margin: 10px 15px;
+  font-size: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.box4 {
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 25px;
+}
+.week-names,
+.date-to-week-day {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 15px;
+}
+.date-to-week-day {
+  font-size: 13px;
+}
+.monday {
+  color: #109cf1;
+}
+.day-23 {
+  color: white;
+  border-radius: 50%;
+  background-color: #109cf1;
+  padding: 4px;
+}
+
+.bottom-main-panel {
+  display: flex;
+  flex-flow: column nowrap;
+}
+.task1,
+.task2,
+.task3 {
+  display: flex;
+  flex-flow: column nowrap;
+  flex-basis: 33%;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+  border-radius: 4px;
+  margin: 20px 15px;
+}
+.task1-line1,
+.task1-line2,
+.task1-line3 {
+  display: flex;
+  flex-flow: row nowrap;
+}

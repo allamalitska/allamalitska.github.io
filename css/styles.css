@@ -11,6 +11,7 @@ body {
   display: flex;
   flex-direction: row;
   width: 100vw;
+  min-height: 100vh;
 }
 
 /* Side bar */
@@ -437,7 +438,6 @@ p.text-task-l {
   .content {
     padding: 0;
     flex-flow: column nowrap;
-    padding: 0;
   }
 
   .search-bar {

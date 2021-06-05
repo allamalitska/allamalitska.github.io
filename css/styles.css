@@ -19,9 +19,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
-  /* min-width: 256px; */
-  width: 35%;
-  max-width: 256px;
+  width: 256px;
   height: 850px;
 }
 
@@ -437,7 +435,7 @@ p.text-task-l {
   }
   .side-bar {
     display: none;
-    min-width: 0;
+    width: 0;
   }
   .content {
     padding: 0;

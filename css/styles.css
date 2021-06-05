@@ -10,8 +10,8 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: row;
-  height: 100vh;
-  max-width: 1440px;
+  width: 100vw;
+  /* max-width: 1440px; */
 }
 
 /* Side bar */
@@ -20,7 +20,8 @@ body {
   flex-direction: column;
   background-color: #ffffff;
   width: 256px;
-  height: 850px;
+  min-height: 850px;
+  height: 100%;
 }
 
 .top-nav-bar {
@@ -119,6 +120,7 @@ p {
   flex-flow: column nowrap;
   justify-content: space-between;
   flex-basis: 50%;
+  flex-grow: 1;
 }
 .settings {
   display: flex;
@@ -141,16 +143,13 @@ p {
   letter-spacing: 1%;
   padding: 5px 10px;
 }
-/* Main */
+
 .main {
   display: flex;
   flex-direction: column;
-  /* width: 100%; */
-  width: 65%;
-  flex: 1;
+  width: calc(100% - 256px);
 }
 
-/* Search bar */
 .search-bar {
   display: flex;
   flex-flow: row;
@@ -159,7 +158,6 @@ p {
   margin-left: 3px;
   padding: 0px 10px;
   background: #ffffff;
-  width: 100%;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .global-search {

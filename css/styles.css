@@ -25,7 +25,8 @@ body {
 }
 
 .top-nav-bar {
-  flex-basis: 50%;
+  flex-basis: 60%;
+  margin-bottom: 30px;
 }
 .top {
   display: flex;
@@ -119,7 +120,7 @@ p {
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-between;
-  flex-basis: 50%;
+  flex-basis: 40%;
   flex-grow: 1;
 }
 .settings {
@@ -239,6 +240,7 @@ p {
   font-size: 12px;
   line-height: 18px;
   letter-spacing: 0.01em;
+  background-color: white;
 }
 .box2 {
   background: #ebeff2;
@@ -416,13 +418,17 @@ p.text-task-l {
 }
 
 .button-show-more {
-  display: block;
-  align-items: center;
   width: 160px;
   height: 20px;
   color: #109cf1;
   border: none;
   background-color: white;
+}
+.button-show {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 @media only screen and (max-width: 380px) {
   .page-wrapper {

@@ -149,6 +149,7 @@ p {
   flex-direction: column;
   /* width: 100%; */
   width: 65%;
+  flex: 1;
 }
 
 /* Search bar */
@@ -227,11 +228,21 @@ p {
   flex-flow: row nowrap;
   justify-content: space-between;
   margin: 15px;
-  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #334d6e;
 }
 .text-styling {
   color: #109cf1;
   border: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  letter-spacing: 0.01em;
 }
 .box2 {
   background: #ebeff2;
@@ -247,25 +258,50 @@ p {
 }
 .box3 {
   margin: 10px 15px;
-  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  letter-spacing: 0.01em;
+  color: #192a3e;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 .box4 {
   display: flex;
   flex-flow: column nowrap;
   margin-top: 25px;
+  font-family: Poppins;
 }
-.week-names,
+.week-names {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #334d6e;
+  opacity: 0.5;
+}
 .date-to-week-day {
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-items: center;
   margin: 5px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  letter-spacing: 0.01em;
+  color: #4c5862;
 }
-.date-to-week-day {
-  font-size: 15px;
-}
+
 .monday {
   color: #109cf1;
 }
@@ -336,28 +372,56 @@ p {
   filter: none;
 }
 p.text-task-right {
-  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
   letter-spacing: 0.01em;
   color: #90a0b7;
 }
 
 p.text-task-left {
-  font-size: 20px;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
   letter-spacing: 0.01em;
-  color: black;
+  color: #323c47;
 }
 
 p.text-task {
-  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
   letter-spacing: 0.01em;
-  color: #90a0b7;
+  color: #4c5862;
+  opacity: 0.5;
 }
+.date-style {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
+  letter-spacing: 0.01em;
+  color: #4c5862;
+}
+
 p.text-task-l {
-  font-size: 18px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 19px;
   letter-spacing: 0.01em;
-  color: black7;
+  color: #707683;
 }
+
 .button-show-more {
+  display: block;
+  align-items: center;
   width: 160px;
   height: 20px;
   color: #109cf1;

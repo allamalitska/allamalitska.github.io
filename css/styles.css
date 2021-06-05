@@ -439,7 +439,6 @@ p.text-task-l {
   .content {
     padding: 0;
     flex-flow: column nowrap;
-    padding: 0;
   }
 
   .search-bar {

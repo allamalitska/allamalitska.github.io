@@ -10,8 +10,7 @@ body {
 .page-wrapper {
   display: flex;
   flex-direction: row;
-  width: 100vw;
-  min-height: 100vh;
+  width: 100%;
 }
 
 /* Side bar */
@@ -156,11 +155,9 @@ p {
   flex-flow: row;
   align-items: center;
   height: 60px;
-  margin-left: 3px;
   padding: 0px 10px;
   background: #ffffff;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  width: 100vw;
 }
 .global-search {
   text-decoration: none;
@@ -177,6 +174,7 @@ p {
   display: flex;
   flex-direction: row;
   padding: 36px;
+  overflow-y: auto;
 }
 
 .charts {
@@ -347,6 +345,8 @@ p {
 }
 p {
   padding: 3px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .line3 {
@@ -370,8 +370,6 @@ p {
   filter: none;
 }
 p.text-task-right {
-  font-style: normal;
-  font-weight: 500;
   font-size: 12px;
   line-height: 18px;
   text-align: right;
@@ -381,12 +379,15 @@ p.text-task-right {
 
 p.text-task-left {
   font-family: Poppins;
-  font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 22px;
   letter-spacing: 0.01em;
   color: #323c47;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 70%;
 }
 
 p.text-task {
@@ -447,8 +448,7 @@ p.text-task-l {
   }
 
   .search-bar {
-    width: 100%;
-    margin-left: 0;
+    margin: 0;
   }
 
   .panels {
@@ -466,6 +466,7 @@ p.text-task-l {
   .top-main-panel {
     flex-basis: 30%;
     height: 100%;
+    border-bottom: none;
   }
   .bottom-main-panel {
     flex-basis: 70%;
